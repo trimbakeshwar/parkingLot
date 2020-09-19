@@ -1,0 +1,5 @@
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcoreapp2.1\appsettings.Development.json
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcoreapp2.1\appsettings.json
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.AssemblyInfoInputs.cache
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.AssemblyInfo.cs

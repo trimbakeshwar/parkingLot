@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4s6ecPBGPw+kHprz2vudcGF2pik95/TlXyZlBDhorw38okrZuOg6AftL92RqiH9z6IC76FtQyi1YGwBklUktVQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
