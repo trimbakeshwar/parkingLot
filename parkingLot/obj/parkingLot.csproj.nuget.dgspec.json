@@ -4,6 +4,127 @@
     "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingLot\\parkingLot.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj",
+        "projectName": "parkingBL",
+        "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj",
+        "packagesPath": "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Er. Sandesh Bora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj"
+              },
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj",
+        "projectName": "parkingCL",
+        "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj",
+        "packagesPath": "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Er. Sandesh Bora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.DataAnnotations": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingLot\\parkingLot.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +147,17 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingBL\\parkingBL.csproj"
+              },
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj"
+              },
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -58,6 +189,69 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.10.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj",
+        "projectName": "parkingRL",
+        "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\parkingRL.csproj",
+        "packagesPath": "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingRL\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Er. Sandesh Bora\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {
+              "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj": {
+                "projectPath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingCL\\parkingCL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [

@@ -1,10 +1,15 @@
-﻿using System;
+﻿using parkingCL;
+using System;
 using System.Collections.Generic;
 using System.Text;
+using static parkingCL.UserLogin;
 
 namespace parkingRL.Interface
 {
-    class RLInterface
+    public interface RLInterface
     {
+        RegistrationModel Registration(RegistrationModel modle);
+        LoginModel userLogin(LoginModel user );
     }
+
 }

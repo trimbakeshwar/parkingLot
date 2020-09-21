@@ -4,16 +4,12 @@ using System.Text;
 
 namespace parkingCL
 {
-    class unparkingModel
+    public class unparkingModel
     {
         public int VehicleUnParkID { get; set; }
-
-       
         public int ParkingID { get; set; }
-
-        public string Status { get; set; }
+        public string Status { get; set; } 
         public double TotalTime { get; set; }
-
         public double TotalAmount { get; set; }
     }
 }
