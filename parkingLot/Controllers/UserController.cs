@@ -19,6 +19,7 @@ namespace parkingLot.Controllers
         {
             this.data = data;
         }
+
         [HttpPost]
         public IActionResult Registration(RegistrationModel info)
         {
@@ -33,17 +34,20 @@ namespace parkingLot.Controllers
             }
 
         }
+        [HttpGet]
+        [Route("login")]
         public IActionResult UserLogin(LoginModel user)
         {
             if (user!=null)
             {
                 LoginModel orignal = data.userLogin(user);
-                return Ok(new { success = true, Massage = "login is successful", data = orignal });
+              
+                return Ok(new { status=true, massage="login successful" });
 
             }
             else
             {
-                return Ok(new { success = true, Massage = "login fail" });
+                return Ok(new { success = false, Massage = "login fail" });
             }
 
           

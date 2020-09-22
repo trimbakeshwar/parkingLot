@@ -9,13 +9,6 @@ namespace parkingCL
     {
         public class LoginModel
         {
-            [Required(ErrorMessage = "UserType Is Required")]
-            public int UserId { get; set; }
-
-            //User Type
-            [Required(ErrorMessage = "UserType Is Required")]
-            [MaxLength(50)]
-            public string UserTypes { get; set; }
 
             //Email Id
             [Required(ErrorMessage = "Email Is Required")]
@@ -27,7 +20,8 @@ namespace parkingCL
             [Required(ErrorMessage = "Password Is Required")]
             [DataType(DataType.Password)]
             [StringLength(50, MinimumLength = 6)]
-            public string Password { get; set; }
+            public string passWord { get; set; }
+             
         }
     }
 }
