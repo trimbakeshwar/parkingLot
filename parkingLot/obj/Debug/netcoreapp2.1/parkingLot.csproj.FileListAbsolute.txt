@@ -15,12 +15,12 @@ C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcorea
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcoreapp2.1\parkingCL.pdb
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\bin\Debug\netcoreapp2.1\parkingRL.pdb
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.csprojAssemblyReference.cache
-C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.csproj.CoreCompileInputs.cache
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.RazorAssemblyInfo.cache
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.RazorAssemblyInfo.cs
-C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.RazorTargetAssemblyInfo.cache
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.csproj.CopyComplete
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.dll
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.pdb
 C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.genruntimeconfig.cache
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\parkingLot.csproj.CoreCompileInputs.cache
+C:\Users\Er. Sandesh Bora\source\repos\parkingLots\parkingLot\obj\Debug\netcoreapp2.1\UserSecretsAssemblyInfo.cs

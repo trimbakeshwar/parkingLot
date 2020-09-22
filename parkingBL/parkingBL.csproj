@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\parkingCL\parkingCL.csproj" />
     <ProjectReference Include="..\parkingRL\parkingRL.csproj" />
   </ItemGroup>

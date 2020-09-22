@@ -35,6 +35,21 @@ namespace parkingLot
             //a new instance is provided every time a service instance is requested
            services.AddTransient<RLInterface, parkingLotRL>();
             services.AddTransient<BLInterface, parkingLotBL>();
+            /*services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info
+                {
+                    Version = "v1",
+                    Title = "parking lot API",
+                    Description = "Asp.NET Core API",
+                    TermsOfService = "None",
+                    Contact = new Contact()
+                    {
+                        Name = "hudge trimbakeshwar",
+                        Email = "hudge.trimbakeshwar@gmail.com"
+                    }
+                });
+            });*/
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -56,6 +71,10 @@ namespace parkingLot
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+            app.UseSwagger();
+            /*app.UseSwaggerUI(c => {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "parking lot API");
+            });*/
         }
     }
 }

@@ -10,6 +10,10 @@ namespace parkingRL.Interface
     {
         RegistrationModel Registration(RegistrationModel modle);
         LoginModel userLogin(LoginModel user );
+        dynamic DeleteUser(int id);
+        dynamic UpdateUserDetail(RegistrationModel Data);
+        dynamic GetAllUserDetail();
+        dynamic GetUserDetail(int userId);
     }
 
 }

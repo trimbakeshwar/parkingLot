@@ -52,5 +52,42 @@ namespace parkingLot.Controllers
 
           
         }
+        [HttpDelete("{Id}")]
+        public IActionResult DeleteUser(int id)
+        {
+          
+                dynamic orignal = data.DeleteUser(id);
+                bool status = orignal.Item1;
+                string massage = orignal.Item2;
+                return Ok(new { status, massage });
+           
+        }
+        [HttpPatch]
+        public IActionResult UpdateUserDetail(RegistrationModel Data)
+        {
+            dynamic orignal = data.UpdateUserDetail(Data);
+            bool status = orignal.Item1;
+            string massage = orignal.Item2;
+            return Ok(new { status, massage });
+        }
+        [HttpGet]
+        public IActionResult GetAllUserDetail()
+        {
+            dynamic orignal = data.GetAllUserDetail();
+            bool status = orignal.Item1;
+            string massage = orignal.Item2;
+            dynamic result = orignal.Item3;
+            return Ok(new { status, massage, result });
+        }
+        [HttpGet("{userId}")]
+
+        public IActionResult GetUserDetail(int userId)
+        {
+            dynamic orignal = data.GetUserDetail(userId);
+            bool status = orignal.Item1;
+            string massage = orignal.Item2;
+            dynamic result = orignal.Item3;
+            return Ok(new { status, massage, result });
+        }
     }
 }

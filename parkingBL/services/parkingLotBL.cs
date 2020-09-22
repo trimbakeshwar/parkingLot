@@ -24,5 +24,24 @@ namespace parkingBL.services
         {
             return this.information.userLogin(user);
         }
+        public dynamic DeleteUser(int id)
+        {
+            return this.information.DeleteUser(id);
+        }
+
+        public dynamic UpdateUserDetail(RegistrationModel Data)
+        {
+            return this.information.UpdateUserDetail(Data);
+        }
+
+        public dynamic GetAllUserDetail()
+        {
+            return this.information.GetAllUserDetail();
+        }
+
+        public dynamic GetUserDetail(int userId)
+        {
+            return this.information.GetUserDetail(userId);
+        }
     }
 }

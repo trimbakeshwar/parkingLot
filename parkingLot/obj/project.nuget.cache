@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "82SW4nukcNWUfDKFzY9tVpRmW/rOxJPnXiZSd4cWZwGbZqPCVWBdoXPWFZMqom9vDbuqfkw4BF5+TeJpk33fxg==",
+  "dgSpecHash": "TTAS++5cskcuffvDPu9cZGNDdYWUnJE0g4DlrwvK2SLPMdh+3ObNyGb80rJnc42ihdcp2vkQyjz5nPTaxoHOxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Er. Sandesh Bora\\source\\repos\\parkingLots\\parkingLot\\parkingLot.csproj",
   "expectedPackageFiles": [
@@ -168,6 +168,7 @@
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.netcore.dotnethostresolver\\2.1.0\\microsoft.netcore.dotnethostresolver.2.1.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.netcore.targets\\2.1.0\\microsoft.netcore.targets.2.1.0.nupkg.sha512",
+    "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.openapi\\1.1.4\\microsoft.openapi.1.1.4.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
@@ -194,6 +195,7 @@
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.0.0\\swashbuckle.aspnetcore.swagger.5.0.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Er. Sandesh Bora\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",
