@@ -15,9 +15,39 @@ namespace parkingBL.services
             this.information = information;
         }
 
+        public List<parkingDetails> GetAllCarDetailByBrand(string brand)
+        {
+            return this.information.GetAllCarDetailByBrand(brand);
+        }
+
+        public List<parkingDetails> GetAllCarDetailByColor(string color)
+        {
+            return this.information.GetAllCarDetailByColor(color);
+        }
+
+        public List<parkingDetails> GetAllHandicapDriverDetail(string driverType)
+        {
+            return this.information.GetAllHandicapDriverDetail(driverType);
+        }
+
         public List<parkingDetails> GetAllParkingCarsDetails()
         {
            return this.information.GetAllParkingCarsDetails();
+        }
+
+        public List<parkingDetails> GetAllUnparkedCarsDetails()
+        {
+            return this.information.GetAllUnparkedCarsDetails();
+        }
+
+        public List<parkingDetails> GetCarDetailByNumber(string number)
+        {
+            return this.information.GetCarDetailByNumber(number);
+        }
+
+        public List<parkingDetails> GetCarDetailsByParkingSlot(string Slot)
+        {
+            return this.information.GetCarDetailsByParkingSlot(Slot);
         }
 
         public parkingDetails ParkingCarInLot(parkingDetails Details)

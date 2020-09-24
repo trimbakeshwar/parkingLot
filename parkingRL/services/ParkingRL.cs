@@ -81,5 +81,70 @@ namespace parkingRL.services
             throw new NotImplementedException();
         }
 
+        public List<parkingDetails> GetAllUnparkedCarsDetails()
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetAllUnparkedCarsDetails", con);
+            command.CommandType = CommandType.StoredProcedure;
+
+            //call get data method
+            return GetParkingData(command);
+        }
+       
+        public List<parkingDetails> GetCarDetailByNumber(string number)
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetCarDetailByNumber", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@VehicleNumber", number);
+            //call get data method
+            return GetParkingData(command);
+        }
+    
+        public List<parkingDetails> GetAllCarDetailByColor(string color)
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetAllCarDetailByColor", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@VehicalColor", color);
+            //call get data method
+            return GetParkingData(command);
+        }
+       
+        public List<parkingDetails> GetAllCarDetailByBrand(string brand)
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetAllCarDetailByBrand", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@VehicalBrand", brand);
+            //call get data method
+            return GetParkingData(command);
+        }
+       
+        public List<parkingDetails> GetAllHandicapDriverDetail(string driverType)
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetAllHandicapDriverDetail", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@ParkingUserCategory", driverType);
+            //call get data method
+            return GetParkingData(command);
+        }
+       
+        public List<parkingDetails> GetCarDetailsByParkingSlot(string Slot)
+        {
+            Connection();
+            //creat instance of store procedure
+            SqlCommand command = new SqlCommand("GetCarDetailsByParkingSlot", con);
+            command.CommandType = CommandType.StoredProcedure;
+            command.Parameters.AddWithValue("@ParkingSlot", Slot);
+            //call get data method
+            return GetParkingData(command);
+        }
     }
 }
