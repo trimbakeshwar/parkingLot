@@ -40,6 +40,8 @@ namespace parkingLot
             //a new instance is provided every time a service instance is requested
            services.AddTransient<RLInterface, parkingLotRL>();
             services.AddTransient<BLInterface, parkingLotBL>();
+            services.AddTransient<IparkingRL, ParkingRL>();
+            services.AddTransient<IvehicalParkingBL, vehicalParkingBL>();
             //Genetate token for user login
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>

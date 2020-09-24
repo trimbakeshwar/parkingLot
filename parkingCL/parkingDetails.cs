@@ -18,3 +18,4 @@ namespace parkingCL
         public System.DateTime ParkingDate { get; set; }
     }
 }
+
