@@ -15,6 +15,6 @@ namespace parkingRL.Interface
         List<parkingDetails> GetAllCarDetailByBrand(string brand);
         List<parkingDetails> GetAllHandicapDriverDetail(string driverType);
         List<parkingDetails> GetCarDetailsByParkingSlot(string Slot);
-
+        parkingDetails DeleteCarParkingDetails(int parkingID);
     }
 }

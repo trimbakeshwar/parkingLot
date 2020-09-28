@@ -80,6 +80,8 @@ namespace parkingLot.Controllers
             List<parkingDetails> orignal = data.GetCarDetailsByParkingSlot(Slot);
             return Ok(new { success = true, Massage = "all car in slot", data = orignal });
         }
+       
+
 
     }
 }
