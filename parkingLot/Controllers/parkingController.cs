@@ -80,7 +80,21 @@ namespace parkingLot.Controllers
             List<parkingDetails> orignal = data.GetCarDetailsByParkingSlot(Slot);
             return Ok(new { success = true, Massage = "all car in slot", data = orignal });
         }
-       
+        [HttpPut]
+        [Route("{ID}/Unpark")]
+        public IActionResult CarUnPark(int ParkingID)
+        {
+            parkingDetails orignal = data.CarUnPark(ParkingID);
+            return Ok(new { success = true, Massage = "car un park", data = orignal });
+        }
+        [HttpDelete]
+        [Route("{ID}")]
+        public IActionResult DeleteCarParkingDetails(int ParkingID)
+        {
+            parkingDetails orignal = data.DeleteCarParkingDetails(ParkingID);
+            return Ok(new { success = true, Massage = "delete car details", data = orignal });
+
+        }
 
 
     }

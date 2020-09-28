@@ -146,5 +146,15 @@ namespace parkingRL.services
             //call get data method
             return GetParkingData(command);
         }
+
+        public parkingDetails CarUnPark(int parkingID)
+        {
+            throw new NotImplementedException();
+        }
+
+        public parkingDetails DeleteCarParkingDetails(int parkingID)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -9,6 +9,8 @@ namespace parkingBL.Interface
     {
         //Car park
         parkingDetails ParkingCarInLot(parkingDetails Details);
+        parkingDetails DeleteCarParkingDetails(int ParkingID);
+        parkingDetails CarUnPark(int ParkingID);
         List<parkingDetails> GetAllParkingCarsDetails();
         List<parkingDetails> GetAllUnparkedCarsDetails();
         List<parkingDetails> GetCarDetailByNumber(string number);

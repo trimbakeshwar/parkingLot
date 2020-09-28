@@ -15,6 +15,17 @@ namespace parkingBL.services
             this.information = information;
         }
 
+        public parkingDetails CarUnPark(int ParkingID)
+        {
+            return this.information.CarUnPark( ParkingID);
+        }
+
+        public parkingDetails DeleteCarParkingDetails(int ParkingID)
+        {
+            return this.information.DeleteCarParkingDetails( ParkingID);
+           
+        }
+
         public List<parkingDetails> GetAllCarDetailByBrand(string brand)
         {
             return this.information.GetAllCarDetailByBrand(brand);

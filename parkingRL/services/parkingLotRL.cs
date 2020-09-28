@@ -232,7 +232,6 @@ namespace parkingRL.services
             command.Parameters.AddWithValue("@userId", uid);
             //call get method
             return GetData(command);
-
         }
         public dynamic GetData(SqlCommand command)
         {

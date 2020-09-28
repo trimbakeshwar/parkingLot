@@ -13,6 +13,7 @@ namespace parkingRL.Interface
         List<parkingDetails> GetCarDetailByNumber(string number);
         List<parkingDetails> GetAllCarDetailByColor(string color);
         List<parkingDetails> GetAllCarDetailByBrand(string brand);
+        parkingDetails CarUnPark(int parkingID);
         List<parkingDetails> GetAllHandicapDriverDetail(string driverType);
         List<parkingDetails> GetCarDetailsByParkingSlot(string Slot);
         parkingDetails DeleteCarParkingDetails(int parkingID);
