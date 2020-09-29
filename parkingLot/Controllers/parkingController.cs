@@ -23,8 +23,12 @@ namespace parkingLot.Controllers
        
         public IActionResult ParkingCarInLot(parkingDetails Details)
         {
-            parkingDetails orignal =  data.ParkingCarInLot(Details);
-            return Ok(new { success = true, Massage = "parking is successful", data = orignal });
+
+           dynamic orignal =  data.ParkingCarInLot(Details);
+            bool status = orignal.Item1;
+            string massage = orignal.Item2;
+            dynamic result = orignal.Item3;
+            return Ok(new { success = status, Massage = massage, data =result });
         }
         [HttpGet]
         public IActionResult GetAllParkingCarsDetails()

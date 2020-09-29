@@ -8,7 +8,7 @@ namespace parkingBL.Interface
     public interface IvehicalParkingBL
     {
         //Car park
-        parkingDetails ParkingCarInLot(parkingDetails Details);
+        dynamic ParkingCarInLot(parkingDetails Details);
         parkingDetails DeleteCarParkingDetails(int ParkingID);
         parkingDetails CarUnPark(int ParkingID);
         List<parkingDetails> GetAllParkingCarsDetails();

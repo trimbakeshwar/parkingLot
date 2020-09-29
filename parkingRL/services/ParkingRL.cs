@@ -76,9 +76,53 @@ namespace parkingRL.services
             return list;
         }
 
-        public parkingDetails ParkingCarInLot(parkingDetails Details)
+        public dynamic ParkingCarInLot(parkingDetails Details)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //get connection
+                Connection();
+                //create instance of store procedure
+                SqlCommand command = new SqlCommand("[spParkingDetails]", con);
+                //string encrypted = EncryptPassword(data.passWord);
+                command.CommandType = CommandType.StoredProcedure;
+                //send parameter to stored procedure
+                command.Parameters.AddWithValue("@VehicleOwnerName", Details.VehicleOwnerName);
+                command.Parameters.AddWithValue("@DriverName", Details.DriverName);
+                command.Parameters.AddWithValue("@VehicleNumber", Details.VehicleNumber);
+                command.Parameters.AddWithValue("@VehicalBrand", Details.VehicalBrand);
+                command.Parameters.AddWithValue("@VehicalColor", Details.VehicalColor);
+                command.Parameters.AddWithValue("@ParkingUserCategory", Details.ParkingUserCategory);
+                command.Parameters.AddWithValue("@Status", Details.Status);
+              
+                //open connection EmployeeTable
+                con.Open();
+                //this qury return 0 after succesfuly run 1 for fail
+                int i = command.ExecuteNonQuery();
+                string number = Details.VehicleNumber;
+                List<parkingDetails> slot = GetCarDetailByNumber(number);
+                con.Close();
+                if (i >= 1)
+                {
+                    return (true, "parking successful", slot);
+                }
+                else if (i == -1)
+                {
+                    return (false, "parking is full", Details);
+                }
+                else
+                {
+                    return (false, "parking fail", Details);
+                }
+               
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+          
+
+
         }
 
         public List<parkingDetails> GetAllUnparkedCarsDetails()

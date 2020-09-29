@@ -61,7 +61,7 @@ namespace parkingBL.services
             return this.information.GetCarDetailsByParkingSlot(Slot);
         }
 
-        public parkingDetails ParkingCarInLot(parkingDetails Details)
+        public dynamic ParkingCarInLot(parkingDetails Details)
         {
             return this.information.ParkingCarInLot(Details);
         }

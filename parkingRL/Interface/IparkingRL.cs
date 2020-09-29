@@ -7,7 +7,7 @@ namespace parkingRL.Interface
 {
     public interface IparkingRL
     {
-        parkingDetails ParkingCarInLot(parkingDetails Details);
+       dynamic ParkingCarInLot(parkingDetails Details);
         List<parkingDetails> GetAllParkingCarsDetails();
         List<parkingDetails> GetAllUnparkedCarsDetails();
         List<parkingDetails> GetCarDetailByNumber(string number);
