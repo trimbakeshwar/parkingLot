@@ -28,7 +28,7 @@ namespace parkingLot.Controllers
             bool status = orignal.Item1;
             string massage = orignal.Item2;
             dynamic result = orignal.Item3;
-            return Ok(new { success = status, Massage = massage, data =result });
+            return Ok(new { success = status, Massage = massage, data = result });
         }
         [HttpGet]
         public IActionResult GetAllParkingCarsDetails()

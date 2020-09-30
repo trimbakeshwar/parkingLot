@@ -83,7 +83,7 @@ namespace parkingRL.services
                 //get connection
                 Connection();
                 //create instance of store procedure
-                SqlCommand command = new SqlCommand("[spParkingDetails]", con);
+                SqlCommand command = new SqlCommand("[spParkingInSlot]", con);
                 //string encrypted = EncryptPassword(data.passWord);
                 command.CommandType = CommandType.StoredProcedure;
                 //send parameter to stored procedure
@@ -92,6 +92,7 @@ namespace parkingRL.services
                 command.Parameters.AddWithValue("@VehicleNumber", Details.VehicleNumber);
                 command.Parameters.AddWithValue("@VehicalBrand", Details.VehicalBrand);
                 command.Parameters.AddWithValue("@VehicalColor", Details.VehicalColor);
+                command.Parameters.AddWithValue("@ParkingSlot", Details.ParkingSlot);
                 command.Parameters.AddWithValue("@ParkingUserCategory", Details.ParkingUserCategory);
                 command.Parameters.AddWithValue("@Status", Details.Status);
               
@@ -99,16 +100,18 @@ namespace parkingRL.services
                 con.Open();
                 //this qury return 0 after succesfuly run 1 for fail
                 int i = command.ExecuteNonQuery();
-                string number = Details.VehicleNumber;
-                List<parkingDetails> slot = GetCarDetailByNumber(number);
                 con.Close();
-                if (i >= 1)
+                if (i >= 0)
                 {
-                    return (true, "parking successful", slot);
+                    return (true, "parking successful", Details);
                 }
                 else if (i == -1)
                 {
                     return (false, "parking is full", Details);
+                }
+                else if (i == -2)
+                {
+                    return (false, "slot is full", Details);
                 }
                 else
                 {
