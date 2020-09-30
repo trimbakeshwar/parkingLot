@@ -91,12 +91,14 @@ namespace parkingLot.Controllers
             parkingDetails orignal = data.CarUnPark(ParkingID);
             return Ok(new { success = true, Massage = "car un park", data = orignal });
         }
-        [HttpDelete]
-        [Route("{ID}")]
+        [HttpDelete("{ParkingID}")]
+       
         public IActionResult DeleteCarParkingDetails(int ParkingID)
         {
-            parkingDetails orignal = data.DeleteCarParkingDetails(ParkingID);
-            return Ok(new { success = true, Massage = "delete car details", data = orignal });
+            dynamic orignal = data.DeleteCarParkingDetails(ParkingID);
+            bool status = orignal.Item1;
+            string massage = orignal.Item2;
+            return Ok(new { success = status, Massage = massage });
 
         }
 

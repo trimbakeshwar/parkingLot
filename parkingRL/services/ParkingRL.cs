@@ -199,9 +199,35 @@ namespace parkingRL.services
             throw new NotImplementedException();
         }
 
-        public parkingDetails DeleteCarParkingDetails(int parkingID)
+        public dynamic DeleteCarParkingDetails(int parkingID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                Connection();
+                //creat instance of store procedure
+                SqlCommand command = new SqlCommand("spUserDeleteParking", con);
+                command.CommandType = CommandType.StoredProcedure;
+                //send parameter to store procedure
+                command.Parameters.AddWithValue("@parkingID", parkingID);
+                //open connection EmployeeTable
+                con.Open();
+                //this qury return 1 after succesfuly run 0 for fail
+                int i = command.ExecuteNonQuery();
+                con.Close();
+                if (i >= 1)
+                {
+                    return (false, "delete fail");
+                }
+                else
+                {
+                    return (true, "delete successful");
+                   
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ namespace parkingBL.Interface
     {
         //Car park
         dynamic ParkingCarInLot(parkingDetails Details);
-        parkingDetails DeleteCarParkingDetails(int ParkingID);
+        dynamic DeleteCarParkingDetails(int ParkingID);
         parkingDetails CarUnPark(int ParkingID);
         List<parkingDetails> GetAllParkingCarsDetails();
         List<parkingDetails> GetAllUnparkedCarsDetails();
