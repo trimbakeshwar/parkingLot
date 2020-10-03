@@ -85,11 +85,13 @@ namespace parkingLot.Controllers
             return Ok(new { success = true, Massage = "all car in slot", data = orignal });
         }
         [HttpPut]
-        [Route("{ID}/Unpark")]
-        public IActionResult CarUnPark(int ParkingID)
+        [Route("{VehicleNumber}/Unpark")]
+        public IActionResult CarUnPark(string VehicleNumber)
         {
-            parkingDetails orignal = data.CarUnPark(ParkingID);
-            return Ok(new { success = true, Massage = "car un park", data = orignal });
+            List<unparkingModel> orignal = data.CarUnPark(VehicleNumber);
+           
+                return Ok(new { success = true, Message = "car unparked successful", Data = orignal });
+          
         }
         [HttpDelete("{ParkingID}")]
        

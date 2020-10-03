@@ -15,9 +15,9 @@ namespace parkingBL.services
             this.information = information;
         }
 
-        public parkingDetails CarUnPark(int ParkingID)
+        public List<unparkingModel> CarUnPark(string VehicleNumber)
         {
-            return this.information.CarUnPark( ParkingID);
+            return this.information.CarUnPark(VehicleNumber);
         }
 
         public dynamic DeleteCarParkingDetails(int ParkingID)

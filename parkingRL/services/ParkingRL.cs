@@ -194,9 +194,49 @@ namespace parkingRL.services
             return GetParkingData(command);
         }
 
-        public parkingDetails CarUnPark(int parkingID)
+        public List<unparkingModel> CarUnPark(string VehicleNumber)
         {
-            throw new NotImplementedException();
+            try
+            {
+
+                List<unparkingModel> list = new List<unparkingModel>();
+                
+                Connection();
+                //creat instance of store procedure
+                SqlCommand command = new SqlCommand("spUnPark", con);
+                command.CommandType = CommandType.StoredProcedure;
+                //send parameter to store procedure
+                command.Parameters.AddWithValue("@VehicleNumber", VehicleNumber);
+                //open connection EmployeeTable
+                con.Open();
+                //this qury return 1 after succesfuly run 0 for fail
+               
+                SqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    var unparkingModel = new unparkingModel
+                    {
+                        VehicleUnParkID = reader.GetInt32(reader.GetOrdinal("VehicleUnParkID")),
+                        ParkingID = reader.GetInt32(reader.GetOrdinal("ParkingID")),
+                        TotalTime = reader.GetString(reader.GetOrdinal("TotalTime")),
+                        TotalAmount = reader.GetDecimal(reader.GetOrdinal("TotalAmount")),
+                        UnParkDate = reader.GetDateTime(reader.GetOrdinal("UnParkDate"))
+                    };
+                    list.Add(unparkingModel);
+
+
+                }
+
+                //connection close
+                con.Close();
+                return list;
+            }
+           
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+
         }
 
         public dynamic DeleteCarParkingDetails(int parkingID)
